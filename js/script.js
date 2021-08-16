@@ -12,6 +12,7 @@ function initImageSlider() {
       slider_img.innerHTML += imgDiv;
     })
   };
+initImage();
 }
 
 document.addEventListener("DOMContentLoaded", initImageSlider);
