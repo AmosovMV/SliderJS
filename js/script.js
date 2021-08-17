@@ -8,7 +8,7 @@ function initImageSlider() {
   
   function initImage() {
     imageArray.forEach(function(item,index){
-      let imgDiv = `<div class="image_${index} ${index===0? "currentImg":""}" style="backgroung-image:src(${imageArray[index].url})"></div>`;
+      let imgDiv = `<div class="image_${index} ${index===0? "currentImg":""}" style="background-image:src(${imageArray[index].url})"></div>`;
       slider_img.innerHTML += imgDiv;
     })
   };
