@@ -1,4 +1,4 @@
-let imageArray = [{ src: "./asset/58.jpg" }, { src: "./asset/41.jpg" }];
+let imageArray = [{ url: "./asset/58.jpg" }, { url: "./asset/41.jpg" }];
 
 function initImageSlider() {
   let slider_img = document.querySelector(".slider_img");
@@ -8,11 +8,13 @@ function initImageSlider() {
   
   function initImage() {
     imageArray.forEach(function(item,index){
-      let imgDiv = `<div class="image_${index} ${index===0? "currentImg":""}" style="backgroung-image:src(${imageArray[index].src})"></div>`;
+      let imgDiv = `<div class="image_${index} ${index===0? "currentImg":""}" style="backgroung-image:src(${imageArray[index].url})"></div>`;
       slider_img.innerHTML += imgDiv;
     })
   };
-initImage();
-}
+
+  initImage();
+  
+};
 
 document.addEventListener("DOMContentLoaded", initImageSlider);
