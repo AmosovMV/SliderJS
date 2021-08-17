@@ -51,7 +51,7 @@ body * {
 .point-select-left {
   border-radius: 50%;
   display: inline-block;
-  background-color: #E3B873;
+  background-color: #E1DED8;
   width: 30px;
   height: 30px;
   margin-left: 10px;
@@ -79,7 +79,7 @@ body * {
 .point-select-right {
   border-radius: 50%;
   display: inline-block;
-  background-color: #E3B873;
+  background-color: #E1DED8;
   width: 30px;
   height: 30px;
   margin-left: 10px;
