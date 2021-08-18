@@ -23,12 +23,10 @@ body * {
 
 .section1 {
   background-color: cornsilk;
-  background-size: cover;
+  margin-top: 50px;
 }
 
-.select_image {
-  width: auto;
-  height: 100%;
+.select_image_div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,10 +35,22 @@ body * {
 .slider_img {
   width: 400px;
   height: 300px;
-  background-size: cover;
+  position: relative;
 }
 
-.point-select{
+.slider_img .image.currentImg {
+  opacity: 1;
+}
+
+.slider_img .image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  opacity: 0;
+}
+
+.point-select {
   position: absolute;
   display: flex;
   justify-content: space-between;
