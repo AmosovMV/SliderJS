@@ -19,11 +19,15 @@ body * {
   color: aliceblue;
 }
 
-/* --------------------------------------- */
+/* -------------------------- */
 
 .section1 {
-  background-color: cornsilk;
-  margin-top: 50px;
+  background-color: rgb(223, 219, 203);
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  margin: 20px auto;
+  height: 400px;
 }
 
 .select_image_div {
@@ -39,7 +43,7 @@ body * {
 }
 
 .slider_img .image.currentImg {
-  opacity: 1;
+  visibility: visible;
 }
 
 .slider_img .image {
@@ -47,26 +51,37 @@ body * {
   width: 100%;
   position: absolute;
   background-size: cover;
-  opacity: 0;
+  visibility: hidden;
 }
+
+/* --------переключатели------------ */
 
 .point-select {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  width: 338px;
-  margin-top: 12px;
+  width: 400px;
+}
+
+.point-select:hover {
+  opacity: 1;
 }
 
 .point-select-left {
   border-radius: 50%;
   display: inline-block;
-  background-color: #E1DED8;
+  background-color: rgb(223, 219, 203);
   width: 30px;
   height: 30px;
   margin-left: 10px;
   margin-right: 10px;
   position: relative;
+  opacity: 0.4;
+  transition-duration: 500ms;
+}
+
+.point-select-left:hover {
+  opacity: 1;
 }
 
 .point-select-left::before {
@@ -89,12 +104,18 @@ body * {
 .point-select-right {
   border-radius: 50%;
   display: inline-block;
-  background-color: #E1DED8;
+  background-color: rgb(223, 219, 203);
   width: 30px;
   height: 30px;
   margin-left: 10px;
   margin-right: 10px;
   position: relative;
+  opacity: 0.4;
+  transition-duration: 500ms;
+}
+
+.point-select-right:hover {
+  opacity: 1;
 }
 
 .point-select-right::before {
@@ -112,4 +133,13 @@ body * {
   -o-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
+}
+
+/* ---FOOTER---------- */
+
+.footer_content {
+  background-color: rgb(95, 93, 93);
+  display: flex;
+  height: 83px;
+  justify-content: center;
 }
